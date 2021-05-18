@@ -1,10 +1,14 @@
 .flex-container
 {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
 }
 .inline-flex-container
 {
     display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
 }
 .bg-red
 {
@@ -13,4 +17,20 @@
 .bg-blue
 {
     background-color: skyblue;
+}
+.flex-container>div
+{
+    background-color: darkgray;
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+    width: 70px;
+}
+.inline-flex-container>div
+{
+    background-color: lightgray;
+    margin: 20px;
+    padding: 10px;
+    font-size: 25px;
+    width: 70px;
 }
